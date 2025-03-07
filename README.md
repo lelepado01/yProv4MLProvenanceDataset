@@ -20,6 +20,13 @@ This function will return a pandas DataFrame with three columns:
 
 There are other parameters which can be passed to the get_metric() function, the doc is [here](https://hpci-lab.github.io/yProv4ML.github.io/prov_getters.html). 
 
+## Important
+
+The issue with duplicated epochs ("epoch_1.0" and "epoch_1") is just visual when converting the json in graph format, but when analyzing the JSON everything should be correct. 
+
+I'm also uploading some runs which were run on multi-process environments, so you may see epoch skips (e.g. provgraph_3DGAN where we go from 1, 5, 9, 13...), this is normal, some other processes will have handled the missing epochs, but we kept track of just one. 
+If this is a problem, I can avoid uploading these kind of provenance files, just let me know. 
+
 ### Variables Description
 
 - Loss: loss function over time, which represents the error between predicted and actual values in training

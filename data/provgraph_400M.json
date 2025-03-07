@@ -1,0 +1,396 @@
+{
+    "prefix": {
+        "xsd_1": "http://www.w3.org/2000/10/XMLSchema#",
+        "prov-ml": "prov-ml",
+        "default": "torch"
+    },
+    "entity": {
+        "400M_2N": [
+            {
+                "prov-ml:provenance_path": "prov_save_path",
+                "prov-ml:artifact_uri": "prov_save_path/400M_2N_0/artifacts",
+                "prov-ml:run_id": "0",
+                "prov-ml:type": "LearningStage",
+                "prov-ml:user_id": "gabrielepadovani",
+                "prov-ml:python_version": "3.11.8 | packaged by conda-forge | (main, Feb 16 2024, 20:53:32) [GCC 12.3.0]",
+                "prov-ml:requirements": "torch torchvision torchaudio --index-url https://download.pytorch.org/whl/rocm5.7\ntimm\nlightning\nmatplotlib\nvision_xformer\nhiera-transformer\nscipy\nGPUtil\npsutil\nprov\nfvcore\ncodecarbon\npydot\npyamdgpuinfo\ngpustat"
+            },
+            {
+                "prov-ml:type": "Experiment",
+                "prov-ml:experiment_name": "400M_2N"
+            }
+        ],
+        "source_code": {
+            "prov-ml:type": "SourceCode",
+            "prov-ml:source_name": "provenance_graph.py",
+            "prov-ml:runtime_type": "distributed"
+        },
+        "gpu_power_Context.TRAINING": {
+            "prov-ml:type": "Metric",
+            "prov-ml:name": "gpu_power",
+            "prov-ml:context": "Context.TRAINING",
+            "prov-ml:source": "",
+            "prov-ml:metric_epoch_list": "[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]",
+            "prov-ml:metric_value_list": "[110.0, 129.0, 139.0, 145.0, 149.0, 151.0, 152.0, 153.0, 154.0, 154.0, 154.0, 154.0, 155.0, 154.0, 154.0]",
+            "prov-ml:metric_timestamp_list": "[1722516535765, 1722516536773, 1722516537603, 1722516538417, 1722516539211, 1722516540021, 1722516540909, 1722516541729, 1722516542516, 1722516543358, 1722516544150, 1722516544911, 1722516545726, 1722516546522, 1722516547379]"
+        },
+        "cpu_power_Context.TRAINING": {
+            "prov-ml:type": "Metric",
+            "prov-ml:name": "cpu_power",
+            "prov-ml:context": "Context.TRAINING",
+            "prov-ml:source": "",
+            "prov-ml:metric_epoch_list": "[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]",
+            "prov-ml:metric_value_list": "[42.5, 42.5, 42.5, 42.5, 42.5, 42.5, 42.5, 42.5, 42.5, 42.5, 42.5, 42.5, 42.5, 42.5, 42.5]",
+            "prov-ml:metric_timestamp_list": "[1722516535766, 1722516536774, 1722516537604, 1722516538418, 1722516539211, 1722516540022, 1722516540909, 1722516541730, 1722516542516, 1722516543359, 1722516544150, 1722516544911, 1722516545727, 1722516546523, 1722516547380]"
+        },
+        "gpu_energy_Context.TRAINING": {
+            "prov-ml:type": "Metric",
+            "prov-ml:name": "gpu_energy",
+            "prov-ml:context": "Context.TRAINING",
+            "prov-ml:source": "",
+            "prov-ml:metric_epoch_list": "[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]",
+            "prov-ml:metric_value_list": "[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]",
+            "prov-ml:metric_timestamp_list": "[1722516535766, 1722516536774, 1722516537604, 1722516538418, 1722516539211, 1722516540022, 1722516540909, 1722516541730, 1722516542516, 1722516543359, 1722516544150, 1722516544911, 1722516545727, 1722516546523, 1722516547380]"
+        },
+        "gpu_temperature_Context.TRAINING": {
+            "prov-ml:type": "Metric",
+            "prov-ml:name": "gpu_temperature",
+            "prov-ml:context": "Context.TRAINING",
+            "prov-ml:source": "",
+            "prov-ml:metric_epoch_list": "[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]",
+            "prov-ml:metric_value_list": "[43.0, 43.0, 44.0, 44.0, 44.0, 44.0, 44.0, 44.0, 44.0, 45.0, 44.0, 45.0, 44.0, 44.0, 45.0]",
+            "prov-ml:metric_timestamp_list": "[1722516535760, 1722516536769, 1722516537598, 1722516538413, 1722516539207, 1722516540017, 1722516540905, 1722516541725, 1722516542512, 1722516543353, 1722516544146, 1722516544906, 1722516545721, 1722516546518, 1722516547374]"
+        },
+        "gpu_power_usage_Context.TRAINING": {
+            "prov-ml:type": "Metric",
+            "prov-ml:name": "gpu_power_usage",
+            "prov-ml:context": "Context.TRAINING",
+            "prov-ml:source": "",
+            "prov-ml:metric_epoch_list": "[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]",
+            "prov-ml:metric_value_list": "[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]",
+            "prov-ml:metric_timestamp_list": "[1722516535766, 1722516536774, 1722516537604, 1722516538418, 1722516539211, 1722516540022, 1722516540909, 1722516541730, 1722516542516, 1722516543359, 1722516544150, 1722516544911, 1722516545727, 1722516546523, 1722516547380]"
+        },
+        "cpu_usage_Context.TRAINING": {
+            "prov-ml:type": "Metric",
+            "prov-ml:name": "cpu_usage",
+            "prov-ml:context": "Context.TRAINING",
+            "prov-ml:source": "",
+            "prov-ml:metric_epoch_list": "[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]",
+            "prov-ml:metric_value_list": "[4.0, 8.0, 8.2, 8.3, 8.1, 8.2, 8.3, 8.3, 8.2, 8.3, 8.3, 8.2, 8.4, 8.2, 8.4]",
+            "prov-ml:metric_timestamp_list": "[1722516535727, 1722516536758, 1722516537587, 1722516538403, 1722516539198, 1722516540009, 1722516540895, 1722516541714, 1722516542503, 1722516543343, 1722516544136, 1722516544897, 1722516545712, 1722516546509, 1722516547364]"
+        },
+        "gpu_usage_Context.TRAINING": {
+            "prov-ml:type": "Metric",
+            "prov-ml:name": "gpu_usage",
+            "prov-ml:context": "Context.TRAINING",
+            "prov-ml:source": "",
+            "prov-ml:metric_epoch_list": "[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]",
+            "prov-ml:metric_value_list": "[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]",
+            "prov-ml:metric_timestamp_list": "[1722516535754, 1722516536764, 1722516537593, 1722516538408, 1722516539202, 1722516540013, 1722516540900, 1722516541720, 1722516542508, 1722516543348, 1722516544141, 1722516544902, 1722516545716, 1722516546514, 1722516547370]"
+        },
+        "cpu_energy_Context.TRAINING": {
+            "prov-ml:type": "Metric",
+            "prov-ml:name": "cpu_energy",
+            "prov-ml:context": "Context.TRAINING",
+            "prov-ml:source": "",
+            "prov-ml:metric_epoch_list": "[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]",
+            "prov-ml:metric_value_list": "[0.0005743787440988752, 0.000586279249522421, 0.0005960746313134829, 0.0006056895087162653, 0.0006150564114252725, 0.0006246247680650816, 0.0006351030098067389, 0.0006447890503538979, 0.000654074654314253, 0.0006640168151921695, 0.0006733662500977515, 0.0006823487063248951, 0.0006919739219877454, 0.0007013701169027222, 0.0007114871584706835]",
+            "prov-ml:metric_timestamp_list": "[1722516535766, 1722516536774, 1722516537604, 1722516538418, 1722516539211, 1722516540022, 1722516540909, 1722516541730, 1722516542516, 1722516543359, 1722516544150, 1722516544911, 1722516545727, 1722516546523, 1722516547380]"
+        },
+        "disk_usage_Context.TRAINING": {
+            "prov-ml:type": "Metric",
+            "prov-ml:name": "disk_usage",
+            "prov-ml:context": "Context.TRAINING",
+            "prov-ml:source": "",
+            "prov-ml:metric_epoch_list": "[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]",
+            "prov-ml:metric_value_list": "[0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1]",
+            "prov-ml:metric_timestamp_list": "[1722516535728, 1722516536759, 1722516537587, 1722516538403, 1722516539198, 1722516540009, 1722516540895, 1722516541714, 1722516542503, 1722516543343, 1722516544136, 1722516544897, 1722516545712, 1722516546509, 1722516547365]"
+        },
+        "train_step_time_Context.TRAINING": {
+            "prov-ml:type": "Metric",
+            "prov-ml:name": "train_step_time",
+            "prov-ml:context": "Context.TRAINING",
+            "prov-ml:source": "",
+            "prov-ml:metric_epoch_list": "[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]",
+            "prov-ml:metric_value_list": "[34.93515419960022, 0.692868709564209, 0.50148606300354, 0.49437570571899414, 0.4722142219543457, 0.4997878074645996, 0.5630793571472168, 0.49052858352661133, 0.4742276668548584, 0.5125463008880615, 0.47424840927124023, 0.4703848361968994, 0.5193071365356445, 0.4913973808288574, 0.47329068183898926]",
+            "prov-ml:metric_timestamp_list": "[1722516535727, 1722516536469, 1722516537284, 1722516538107, 1722516538899, 1722516539716, 1722516540591, 1722516541405, 1722516542214, 1722516543034, 1722516543842, 1722516544626, 1722516545436, 1722516546224, 1722516547003]"
+        },
+        "energy_consumed_Context.TRAINING": {
+            "prov-ml:type": "Metric",
+            "prov-ml:name": "energy_consumed",
+            "prov-ml:context": "Context.TRAINING",
+            "prov-ml:source": "",
+            "prov-ml:metric_epoch_list": "[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]",
+            "prov-ml:metric_value_list": "[0.0031207688054579463, 0.0031854254101763395, 0.0032386437854217834, 0.003290881884700704, 0.0033417729457208955, 0.0033937587945314066, 0.0034506882756572647, 0.0035033129395504836, 0.003553762141390254, 0.0036077780140266152, 0.0036585739423142475, 0.0037073762958160592, 0.0037596707782760795, 0.003810720731109243, 0.003865686873418853]",
+            "prov-ml:metric_timestamp_list": "[1722516535766, 1722516536774, 1722516537604, 1722516538418, 1722516539211, 1722516540022, 1722516540909, 1722516541730, 1722516542516, 1722516543359, 1722516544150, 1722516544911, 1722516545727, 1722516546523, 1722516547380]"
+        },
+        "memory_usage_Context.TRAINING": {
+            "prov-ml:type": "Metric",
+            "prov-ml:name": "memory_usage",
+            "prov-ml:context": "Context.TRAINING",
+            "prov-ml:source": "",
+            "prov-ml:metric_epoch_list": "[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]",
+            "prov-ml:metric_value_list": "[6.6, 6.6, 6.6, 6.6, 6.6, 6.6, 6.6, 6.6, 6.6, 6.6, 6.6, 6.6, 6.6, 6.6, 6.6]",
+            "prov-ml:metric_timestamp_list": "[1722516535728, 1722516536759, 1722516537587, 1722516538403, 1722516539198, 1722516540009, 1722516540895, 1722516541714, 1722516542503, 1722516543343, 1722516544136, 1722516544897, 1722516545712, 1722516546509, 1722516547365]"
+        },
+        "Loss_Context.TRAINING": {
+            "prov-ml:type": "Metric",
+            "prov-ml:name": "loss",
+            "prov-ml:context": "Context.TRAINING",
+            "prov-ml:source": "",
+            "prov-ml:metric_epoch_list": "[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]",
+            "prov-ml:metric_value_list": "[0.8003310561180115, 0.6334691047668457, 0.38865602016448975, 0.42333412170410156, 0.27888694405555725, 0.1542312204837799, 0.12197408080101013, 0.19592897593975067, 0.1645263433456421, 0.0718749389052391, 0.0822080448269844, 0.09849395602941513, 0.14718583226203918, 0.0508890300989151, 0.08177287131547928]",
+            "prov-ml:metric_timestamp_list": "[1722516535727, 1722516536758, 1722516537587, 1722516538403, 1722516539197, 1722516540008, 1722516540895, 1722516541713, 1722516542503, 1722516543343, 1722516544136, 1722516544897, 1722516545711, 1722516546509, 1722516547364]"
+        },
+        "ram_power_Context.TRAINING": {
+            "prov-ml:type": "Metric",
+            "prov-ml:name": "ram_power",
+            "prov-ml:context": "Context.TRAINING",
+            "prov-ml:source": "",
+            "prov-ml:metric_epoch_list": "[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]",
+            "prov-ml:metric_value_list": "[188.41599655151367, 188.41599655151367, 188.41599655151367, 188.41599655151367, 188.41599655151367, 188.41599655151367, 188.41599655151367, 188.41599655151367, 188.41599655151367, 188.41599655151367, 188.41599655151367, 188.41599655151367, 188.41599655151367, 188.41599655151367, 188.41599655151367]",
+            "prov-ml:metric_timestamp_list": "[1722516535766, 1722516536774, 1722516537604, 1722516538418, 1722516539211, 1722516540022, 1722516540909, 1722516541730, 1722516542516, 1722516543359, 1722516544150, 1722516544911, 1722516545727, 1722516546523, 1722516547380]"
+        },
+        "gpu_memory_usage_Context.TRAINING": {
+            "prov-ml:type": "Metric",
+            "prov-ml:name": "gpu_memory_usage",
+            "prov-ml:context": "Context.TRAINING",
+            "prov-ml:source": "",
+            "prov-ml:metric_epoch_list": "[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]",
+            "prov-ml:metric_value_list": "[0.08296851924738075, 0.07373153275430863, 0.07373153275430863, 0.07373153275430863, 0.07373153275430863, 0.07373153275430863, 0.07373153275430863, 0.07373153275430863, 0.07373153275430863, 0.07373153275430863, 0.07373153275430863, 0.07373153275430863, 0.07373153275430863, 0.07373153275430863, 0.07373153275430863]",
+            "prov-ml:metric_timestamp_list": "[1722516535728, 1722516536759, 1722516537588, 1722516538403, 1722516539198, 1722516540009, 1722516540896, 1722516541714, 1722516542503, 1722516543344, 1722516544136, 1722516544898, 1722516545712, 1722516546509, 1722516547365]"
+        },
+        "ram_energy_Context.TRAINING": {
+            "prov-ml:type": "Metric",
+            "prov-ml:name": "ram_energy",
+            "prov-ml:context": "Context.TRAINING",
+            "prov-ml:source": "",
+            "prov-ml:metric_epoch_list": "[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]",
+            "prov-ml:metric_value_list": "[0.002546390061359071, 0.002599146160653918, 0.0026425691541083003, 0.0026851923759844383, 0.0027267165342956226, 0.0027691340264663247, 0.0028155852658505254, 0.0028585238891965853, 0.0028996874870760004, 0.002943761198834445, 0.002985207692216495, 0.0030250275894911634, 0.0030676968562883336, 0.0031093506142065206, 0.003154199714948169]",
+            "prov-ml:metric_timestamp_list": "[1722516535766, 1722516536774, 1722516537604, 1722516538418, 1722516539211, 1722516540022, 1722516540909, 1722516541730, 1722516542516, 1722516543359, 1722516544150, 1722516544911, 1722516545727, 1722516546523, 1722516547380]"
+        },
+        "emissions_rate_Context.TRAINING": {
+            "prov-ml:type": "Metric",
+            "prov-ml:name": "emissions_rate",
+            "prov-ml:context": "Context.TRAINING",
+            "prov-ml:source": "",
+            "prov-ml:metric_epoch_list": "[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]",
+            "prov-ml:metric_value_list": "[1.5248009423199425e-07, 1.5248024694265497e-07, 1.52479976564987e-07, 1.5247989272825053e-07, 1.5248031118219495e-07, 1.5248007989139073e-07, 1.5247994545913187e-07, 1.5247946697496782e-07, 1.524797979326314e-07, 1.524793000812324e-07, 1.5247959887230576e-07, 1.5247948040447262e-07, 1.52479395897969e-07, 1.524791992467174e-07, 1.5247884139142494e-07]",
+            "prov-ml:metric_timestamp_list": "[1722516535766, 1722516536774, 1722516537604, 1722516538418, 1722516539211, 1722516540022, 1722516540909, 1722516541730, 1722516542516, 1722516543359, 1722516544150, 1722516544911, 1722516545727, 1722516546523, 1722516547380]"
+        },
+        "emissions_Context.TRAINING": {
+            "prov-ml:type": "Metric",
+            "prov-ml:name": "emissions",
+            "prov-ml:context": "Context.TRAINING",
+            "prov-ml:source": "",
+            "prov-ml:metric_epoch_list": "[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]",
+            "prov-ml:metric_value_list": "[0.0031207688054579463, 0.0031854254101763395, 0.0032386437854217834, 0.003290881884700704, 0.0033417729457208955, 0.0033937587945314066, 0.0034506882756572647, 0.0035033129395504836, 0.003553762141390254, 0.0036077780140266152, 0.0036585739423142475, 0.0037073762958160592, 0.0037596707782760795, 0.003810720731109243, 0.003865686873418853]",
+            "prov-ml:metric_timestamp_list": "[1722516535766, 1722516536774, 1722516537604, 1722516538418, 1722516539211, 1722516540022, 1722516540909, 1722516541730, 1722516542516, 1722516543359, 1722516544150, 1722516544911, 1722516545727, 1722516546523, 1722516547380]"
+        },
+        "execution_start_time": {
+            "prov-ml:parameter_value": "1722516487.1119406",
+            "prov-ml:type": "Parameter"
+        },
+        "model_build_time": {
+            "prov-ml:parameter_value": "4.872984886169434",
+            "prov-ml:type": "Parameter"
+        },
+        "data_loading_time": {
+            "prov-ml:parameter_value": "7.7815375328063965",
+            "prov-ml:type": "Parameter"
+        },
+        "training_time": {
+            "prov-ml:parameter_value": "46.61149048805237",
+            "prov-ml:type": "Parameter"
+        },
+        "execution_end_time": {
+            "prov-ml:parameter_value": "1722516547.380204",
+            "prov-ml:type": "Parameter"
+        },
+        "model_name": {
+            "prov-ml:parameter_value": "MAE_400M",
+            "prov-ml:type": "Parameter"
+        },
+        "total_params": {
+            "prov-ml:parameter_value": "400000000",
+            "prov-ml:type": "Parameter"
+        },
+        "memory_of_model": {
+            "prov-ml:parameter_value": "1.64",
+            "prov-ml:type": "Parameter"
+        },
+        "total_memory_load_of_model": {
+            "prov-ml:parameter_value": "64.3",
+            "prov-ml:type": "Parameter"
+        },
+        "final_run_statistics": {
+            "prov-ml:type": "RunStatistics"
+        },
+        "datasets": {},
+        "train_dataset": {
+            "prov-ml:type": "Dataset",
+            "prov-ml:val_dataset_stat_total_steps": "15",
+            "prov-ml:val_dataset_stat_batch_size": "32",
+            "prov-ml:train_dataset_stat_total_samples": "861016"
+        }
+    },
+    "activity": {
+        "400M_2N_execution": {
+            "prov-ml:type": "LearningExecution"
+        },
+        "epoch_0": {
+            "prov-ml:type": "TrainingExecution"
+        },
+        "prov-ml:ModelRegistration": {},
+        "data_preparation": {
+            "prov-ml:type": "FeatureExtractionExecution"
+        }
+    },
+    "agent": {
+        "gabrielepadovani": {}
+    },
+    "wasAssociatedWith": {
+        "_:id1": {
+            "prov:activity": "400M_2N_execution",
+            "prov:agent": "gabrielepadovani"
+        }
+    },
+    "used": {
+        "_:id2": {
+            "prov:activity": "400M_2N_execution",
+            "prov:entity": "source_code"
+        },
+        "_:id6": {
+            "prov:activity": "400M_2N_execution",
+            "prov:entity": "execution_start_time"
+        },
+        "_:id7": {
+            "prov:activity": "400M_2N_execution",
+            "prov:entity": "model_build_time"
+        },
+        "_:id8": {
+            "prov:activity": "400M_2N_execution",
+            "prov:entity": "data_loading_time"
+        },
+        "_:id9": {
+            "prov:activity": "400M_2N_execution",
+            "prov:entity": "training_time"
+        },
+        "_:id10": {
+            "prov:activity": "400M_2N_execution",
+            "prov:entity": "execution_end_time"
+        },
+        "_:id12": {
+            "prov:activity": "400M_2N_execution",
+            "prov:entity": "train_dataset"
+        }
+    },
+    "hadMember": {
+        "_:id3": {
+            "prov:collection": "400M_2N",
+            "prov:entity": "400M_2N"
+        },
+        "_:id13": {
+            "prov:collection": "datasets",
+            "prov:entity": "train_dataset"
+        }
+    },
+    "wasGeneratedBy": {
+        "_:id4": {
+            "prov:entity": "400M_2N",
+            "prov:activity": "400M_2N_execution"
+        },
+        "gpu_power_usage_train_0_gen": {
+            "prov:entity": "gpu_power_usage_Context.TRAINING",
+            "prov:activity": "epoch_0"
+        },
+        "cpu_power_train_0_gen": {
+            "prov:entity": "cpu_power_Context.TRAINING",
+            "prov:activity": "epoch_0"
+        },
+        "gpu_energy_train_0_gen": {
+            "prov:entity": "gpu_energy_Context.TRAINING",
+            "prov:activity": "epoch_0"
+        },
+        "gpu_temperature_train_0_gen": {
+            "prov:entity": "gpu_temperature_Context.TRAINING",
+            "prov:activity": "epoch_0"
+        },
+        "gpu_power_train_0_gen": {
+            "prov:entity": "gpu_power_Context.TRAINING",
+            "prov:activity": "epoch_0"
+        },
+        "cpu_usage_train_0_gen": {
+            "prov:entity": "cpu_usage_Context.TRAINING",
+            "prov:activity": "epoch_0"
+        },
+        "gpu_usage_train_0_gen": {
+            "prov:entity": "gpu_usage_Context.TRAINING",
+            "prov:activity": "epoch_0"
+        },
+        "cpu_energy_train_0_gen": {
+            "prov:entity": "cpu_energy_Context.TRAINING",
+            "prov:activity": "epoch_0"
+        },
+        "disk_usage_train_0_gen": {
+            "prov:entity": "disk_usage_Context.TRAINING",
+            "prov:activity": "epoch_0"
+        },
+        "train_step_time_train_0_gen": {
+            "prov:entity": "train_step_time_Context.TRAINING",
+            "prov:activity": "epoch_0"
+        },
+        "energy_consumed_train_0_gen": {
+            "prov:entity": "energy_consumed_Context.TRAINING",
+            "prov:activity": "epoch_0"
+        },
+        "memory_usage_train_0_gen": {
+            "prov:entity": "memory_usage_Context.TRAINING",
+            "prov:activity": "epoch_0"
+        },
+        "loss_train_0_gen": {
+            "prov:entity": "Loss_Context.TRAINING",
+            "prov:activity": "epoch_0"
+        },
+        "ram_power_train_0_gen": {
+            "prov:entity": "ram_power_Context.TRAINING",
+            "prov:activity": "epoch_0"
+        },
+        "gpu_memory_usage_train_0_gen": {
+            "prov:entity": "gpu_memory_usage_Context.TRAINING",
+            "prov:activity": "epoch_0"
+        },
+        "ram_energy_train_0_gen": {
+            "prov:entity": "ram_energy_Context.TRAINING",
+            "prov:activity": "epoch_0"
+        },
+        "emissions_rate_train_0_gen": {
+            "prov:entity": "emissions_rate_Context.TRAINING",
+            "prov:activity": "epoch_0"
+        },
+        "emissions_train_0_gen": {
+            "prov:entity": "emissions_Context.TRAINING",
+            "prov:activity": "epoch_0"
+        },
+        "_:id11": {
+            "prov:entity": "final_run_statistics",
+            "prov:activity": "400M_2N_execution"
+        },
+        "_:id14": {
+            "prov:entity": "datasets",
+            "prov:activity": "400M_2N_execution"
+        }
+    },
+    "wasStartedBy": {
+        "_:id5": {
+            "prov:activity": "epoch_0",
+            "prov:trigger": "400M_2N_execution"
+        }
+    },
+    "wasInformedBy": {
+        "_:id15": {
+            "prov:informed": "prov-ml:ModelRegistration",
+            "prov:informant": "400M_2N_execution"
+        }
+    }
+}
